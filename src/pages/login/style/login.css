@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #7F7FD5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.wrapper {
+    width: 380px;
+    background: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 40px 30px 50px 30px;
+}
+
+.logo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.wrapper header {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.wrapper form {
+    margin: 20px 0;
+}
+
+form .field {
+    width: 16%;
+    top: 20%;  
+    margin-bottom: 10px;
+}
+
+form .field.shake {
+    animation: shake 0.3s ease-in-out infinite;
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        margin-left: 0px;
+    }
+    20%,
+    80% {
+        margin-left: -12px;
+    }
+    40%,
+    60% {
+        margin-left: 12px;
+    }
+}
+
+form .field .input-area {
+    position: relative;
+}
+
+form input {
+    height: 50px;
+    width: 18em;
+    outline: none;
+    padding: 0 45px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+    border-bottom-width: 2px;
+}
+
+form .field.error input {
+    border-color: #dc3545;
+}
+
+form input::placeholder {
+    color: #bfbfbf;
+    font-size: 17px;
+}
+
+form .field i {
+    position: absolute;
+    top: 50%;
+    font-size: 18px;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+
+.icon{
+  position: absolute;
+  top: 33%;
+}
+form .field .icon {
+    left: 15px;
+    color: #bfbfbf;
+}
+
+form .field .error-icon {
+    right: 30px;
+    color: #dc3545;
+}
+
+.errorPassword{
+  position: absolute;
+  top: 45%;
+  left: 41%;
+
+}
+.errorEmail{
+  position: absolute;
+  top: 60%;
+  left: 41%;
+
+}
+form .field .error-text {    
+    color: #dc3545;
+    margin-top: 10px;
+    text-align: left;
+}
+
+
+
+form .field .error {
+    display: none;
+}
+
+form .field.error .error {
+    display: block;
+}
+
+form .pass-link {
+    text-align: left;
+    margin-top: -10px;
+}
+
+.wrapper a {
+    color: #5372f0;
+    text-decoration: none;
+}
+
+.wrapper a:hover {
+    text-decoration: underline;
+}
+
+form input[type="submit"] {
+    margin-top: 30px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background: #5372f0;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: #2c52ed;
+}
